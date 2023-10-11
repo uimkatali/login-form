@@ -21,7 +21,7 @@ export default function About() {
     <main>
       <List sx={{ display: "flex", flexDirection: "column" }}>
         {usersList.map((user) => (
-          <ListItemText primary={user.name} />
+          <ListItemText key={user._id} primary={user.name} />
         ))}
       </List>
     </main>
