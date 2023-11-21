@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const REACT_APP_SERVER_URL = 'https://nestjs-vercel-nine.vercel.app/'
+const REACT_APP_SERVER_URL = 'https://nestjs-vercel-nine.vercel.app'
 
 const getConfig = () => {
   const token = localStorage.getItem('token')
