@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const REACT_APP_SERVER_URL = 'http://login-form-api.vercel.app'
+const REACT_APP_SERVER_URL = 'https://login-form-api.vercel.app'
 
 const getConfig = () => {
   const token = localStorage.getItem('token')
