@@ -3,7 +3,7 @@ import axios from 'axios'
 const REACT_APP_SERVER_URL = 'https://login-form-api.vercel.app'
 
 const getConfig = () => {
-  const token = localStorage.getItem('token')
+  const token = localStorage.getItem('VERCEL_ACCESS_TOKEN')
   return {
     headers: {
       Authorization: `Bearer ${token}`,
