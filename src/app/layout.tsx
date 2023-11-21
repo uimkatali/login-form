@@ -1,29 +1,28 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import Navbar from './components/Navbar'
-import { Analytics } from '@vercel/analytics/react'
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Navbar from "./components/Navbar";
+import { Analytics } from "@vercel/analytics/react";
 
-
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Login form',
-  description: 'Created by UIMasters',
-}
+  title: "Login form",
+  description: "Created by UIMasters",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navbar/>
+    <html style={{ height: "100%" }} lang="en">
+      <body style={{ height: "100%" }} className={inter.className}>
+        <Navbar />
         {children}
         <Analytics />
-        </body>
+      </body>
     </html>
-  )
+  );
 }
