@@ -6,6 +6,7 @@ const getConfig = () => {
   const token = localStorage.getItem('VERCEL_ACCESS_TOKEN')
   return {
     headers: {
+      Accept: 'application/json',
       Authorization: `Bearer ${token}`,
     },
   }
